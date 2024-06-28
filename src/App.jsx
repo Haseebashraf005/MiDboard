@@ -1,9 +1,9 @@
 import React from 'react'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SideBar from './component/layout/SideBar'
 import Home from './component/pages/Home';
 import About from './component/pages/About';
 import Setting from './component/pages/Setting';
+
 
 
 const App = () => {
@@ -11,9 +11,9 @@ const App = () => {
 
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Home/>} />
         <Route path="/about" element={<About />} />
-        <Route path="/setting" element={<Setting/>} />
+        <Route path="/setting" element={<Setting/>} /> 
       </Routes>
     </Router>
 
