@@ -1,9 +1,23 @@
 import React from 'react'
-import SideBar from './component/SideBar'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import SideBar from './component/layout/SideBar'
+import Home from './component/pages/Home';
+import About from './component/pages/About';
+import Setting from './component/pages/Setting';
+
 
 const App = () => {
   return (
-   <SideBar />
+
+    <Router>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/setting" element={<Setting/>} />
+      </Routes>
+    </Router>
+
+    
   )
 }
 
