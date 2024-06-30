@@ -5,10 +5,14 @@ import NavBar from '../layout/NavBar'
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
+import WalletIcon from '@mui/icons-material/Wallet';
+import StorefrontIcon from '@mui/icons-material/Storefront';
+import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
+import "./home.css"
 
 const Home = () => {
   return (
-    <>
+    <div className='bgcolor-main'>
 
       <NavBar />
       <Box height={60} />
@@ -25,27 +29,37 @@ const Home = () => {
 
               <Stack spacing={2} direction="row">
 
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
+                <Card sx={{ minWidth: "49%" , minHeight:190 , color:"white"}} className='gradient-1'>
+                  <CardContent style={{marginTop:"20px"}}>
+                    <div className="earning-icon">
+                      <WalletIcon />
+                    </div>
+                    <div className="earning-desc">
+                      <Stack >
+
+                        <span>$500.00</span>
+                        <span>Total Earning</span>
+
+                      </Stack>
+                    </div>
+
                   </CardContent>
                 </Card>
 
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
-                    </Typography>
-                    <Typography variant="body2" color="text.secondary">
-                      Lizards are a widespread group of squamate reptiles, with over 6,000
-                      species, ranging across all continents except Antarctica
-                    </Typography>
+                <Card sx={{ minWidth: "49%" ,color:"white"}} className='gradient-2'>
+                <CardContent style={{marginTop:"20px"}}>
+                    <div className="earning-icon">
+                      <WalletIcon />
+                    </div>
+                    <div className="earning-desc">
+                      <Stack >
+
+                        <span>$900.00</span>
+                        <span>Total Order</span>
+
+                      </Stack>
+                    </div>
+
                   </CardContent>
                 </Card>
               </Stack>
@@ -53,27 +67,52 @@ const Home = () => {
 
             </Grid>
 
-            <Box height={20} />
 
             <Grid item xs={4}>
 
 
               <Stack spacing={2}>
 
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
-                    </Typography>
+                <Card>
+                  <CardContent className="flex gradient-1" >
+
+                    <div className="icon-container ">
+                      <StorefrontIcon />
+                    </div>
+
+                    <div className="des-container">
+
+                      <Stack>
+
+                        <span className='amount'>$203K</span>
+                        <span className='amount-title'>Total Income</span>
+
+                      </Stack>
+
+                    </div>
+
 
                   </CardContent>
                 </Card>
 
-                <Card sx={{ maxWidth: 345 }}>
-                  <CardContent>
-                    <Typography gutterBottom variant="h5" component="div">
-                      Lizard
-                    </Typography>
+                <Card>
+                  <CardContent className="flex gradient-2">
+
+                    <div className="icon-container ">
+                      <ProductionQuantityLimitsIcon />
+                    </div>
+
+                    <div className="des-container">
+
+                      <Stack>
+
+                        <span className='amount'>$147K</span>
+                        <span className='amount-title'>Total Income</span>
+
+                      </Stack>
+
+                    </div>
+
 
                   </CardContent>
                 </Card>
@@ -82,7 +121,9 @@ const Home = () => {
 
           </Grid>
 
+
           {/* <hr /> */}
+
           <Box height={30} />
 
 
@@ -92,10 +133,8 @@ const Home = () => {
             <Grid item xs={8}>
 
 
-              <Card sx={{ maxWidth: 345 }}>
+              <Card sx={{ height: "60vh" }}>
                 <CardContent>
-
-
                 </CardContent>
               </Card>
 
@@ -104,13 +143,14 @@ const Home = () => {
             </Grid>
 
 
+
             <Grid item xs={4}>
 
               <Stack spacing={2}>
 
 
 
-                <Card sx={{ maxWidth: 345 }}>
+                <Card sx={{ height: "60vh" }}>
                   <CardContent>
 
 
@@ -133,7 +173,7 @@ const Home = () => {
 
         </Box>
       </Box>
-    </>
+    </div>
   )
 }
 
