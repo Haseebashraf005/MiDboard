@@ -91,7 +91,7 @@ export default function SideBar() {
             {theme.direction === 'rtl' ? <ChevronRightIcon /> : <ChevronLeftIcon />}
           </IconButton>
         </DrawerHeader>
-        <Divider />
+        {/* <Divider /> */}
         <List>
          
             <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>navigate('/')}>
@@ -158,7 +158,6 @@ export default function SideBar() {
             </ListItem>
          
         </List>
-        <Divider />
     
       </Drawer>
      

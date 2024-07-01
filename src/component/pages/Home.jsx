@@ -9,6 +9,7 @@ import WalletIcon from '@mui/icons-material/Wallet';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
 import "./home.css"
+import AccordianHome from '../layout/AccordianHome';
 
 const Home = () => {
   return (
@@ -73,7 +74,7 @@ const Home = () => {
 
               <Stack spacing={2}>
 
-                <Card>
+                <Card sx={{color:"white"}}>
                   <CardContent className="flex gradient-1" >
 
                     <div className="icon-container ">
@@ -95,7 +96,7 @@ const Home = () => {
                   </CardContent>
                 </Card>
 
-                <Card>
+                <Card sx={{color:"white"}}>
                   <CardContent className="flex gradient-2">
 
                     <div className="icon-container ">
@@ -152,8 +153,16 @@ const Home = () => {
 
                 <Card sx={{ height: "60vh" }}>
                   <CardContent>
+                  <div className="earning-desc" style={{marginBlock:"20px"}}>
+                     
 
+                        
+                        <span className='amount'>Popular Products</span>
 
+                      
+                    </div>  
+
+                    <AccordianHome />
                   </CardContent>
                 </Card>
               </Stack>
