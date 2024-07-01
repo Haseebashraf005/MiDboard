@@ -92,6 +92,7 @@ export default function SideBar() {
           </IconButton>
         </DrawerHeader>
         {/* <Divider /> */}
+        
         <List>
          
             <ListItem  disablePadding sx={{ display: 'block' }} onClick={()=>navigate('/')}>

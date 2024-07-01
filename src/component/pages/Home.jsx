@@ -1,6 +1,6 @@
 import React from 'react'
 import SideBar from '../layout/SideBar'
-import { Box, Stack, Typography } from '@mui/material'
+import { Box, Divider, Stack, Typography } from '@mui/material'
 import NavBar from '../layout/NavBar'
 import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
@@ -8,8 +8,9 @@ import CardContent from '@mui/material/CardContent';
 import WalletIcon from '@mui/icons-material/Wallet';
 import StorefrontIcon from '@mui/icons-material/Storefront';
 import ProductionQuantityLimitsIcon from '@mui/icons-material/ProductionQuantityLimits';
-import "./home.css"
 import AccordianHome from '../layout/AccordianHome';
+import BarChart from '../layout/chart/BarChart';
+import "./home.css"
 
 const Home = () => {
   return (
@@ -136,6 +137,8 @@ const Home = () => {
 
               <Card sx={{ height: "60vh" }}>
                 <CardContent>
+
+              <BarChart/>
                 </CardContent>
               </Card>
 
@@ -163,6 +166,12 @@ const Home = () => {
                     </div>  
 
                     <AccordianHome />
+
+
+                    <Divider/>
+                    <Divider/>
+                    <Divider/>
+                    
                   </CardContent>
                 </Card>
               </Stack>
@@ -173,6 +182,7 @@ const Home = () => {
 
 
           </Grid>
+
 
 
 
